@@ -1,85 +1,148 @@
 <!DOCTYPE html>
-<html lang="pt.br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio Aline</title>
+    <title>Portfólio | Aline Marques</title>
     <link rel="stylesheet" href="./capa.css">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
     
-     <header id="cabeçalho">
+    <header id="cabecalho">
+        <nav>
+            <a href="#sobre">Sobre mim</a>
+            <a href="#experiencia">Experiência</a>
+            <a href="#formacao">Formação</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#tecnologias">Tecnologias</a>
+        </nav>
+    </header>
 
+    <main>
+        <!-- SEÇÃO SOBRE MIM -->
+        <section id="sobre" class="sessao">
+            <h1 class="titulo-principal">Sobre Mim</h1>
+            <div class="caixa-texto">
+                <p>Olá! Meu nome é <strong>Aline Bianca da Silva Marques.</strong> Minha paixão é a música, os livros e os jogos de VideoGame.</p>
+                <br>
+                <p><strong>OBJETIVO PROFISSIONAL</strong></p>
+                <p>Meus futuros planos são atuar com administração e automação de processos (VBA/Excel), focando na excelência operacional e na melhoria contínua.</p>
+                
+                <!-- BOTÃO DE DOWNLOAD DO CURRÍCULO -->
+                <div style="margin-top: 30px; text-align: center;">
+                    <a href="./Documentos/Currículo Aline Marques.pdf" download="Currículo_Aline_Marques.pdf" class="btn-projeto">
+                        📄 Baixar Meu Currículo (PDF)
+                    </a>
+                </div>
+            </div>
+        </section>
 
-        <h2 id="sobre"><a href="#titulo-1">Sobre mim</h2></a>    
-        <h2> <a href="#titulo-2">Projetos</h2></a>
-        <h2> <a href="#titulo-3">Tecnologias</h2></a>
-     </header>
+        <hr class="divisor">
 
-     <div id="sobre-min">
-     <img src="./imgs/eu.jpeg" alt="Foto" id="foto">
+        <!-- SEÇÃO EXPERIÊNCIA -->
+        <section id="experiencia" class="sessao">
+            <h1 class="titulo-sessao">Experiência Profissional</h1>
+            <div class="grid-cards">
+                <div class="card">
+                    <h3>Jovem Aprendiz em Administração</h3>
+                    <span>CBA | Jan/2025 - Jun/2026</span>
+                    <p>Suporte às rotinas administrativas do departamento, garantindo a padronização e organização. Controle de dados, elaboração de automações, e identificação e redução de GAPs no processo. Utilização de ferramentas de gestão como Risc, SAP e Power BI.</p>
+                </div>
+            </div>
+        </section>
 
-     
-      <div id="texxto">
-      <h1 id="titulo-1">Sobre Mim</h1>
-      <h3 id="texto1">Meu nome é Aline Bianca da Silva Marques e tenho 18 anos, minha paixão é a musica por isso sou Pianista e Organista, mais meus outros hobies são a leitura e jogar video-game. 
-        Meus futuros planos são me tornar uma desenvolvera web e expecialista em back end.
-        E meu maior sonho é ser mãe e tocar ainda mais intrumentos musicais.</h3>
-      </div>  
+        <hr class="divisor">
 
-     
+        <!-- SEÇÃO FORMAÇÃO -->
+        <section id="formacao" class="sessao">
+            <h1 class="titulo-sessao">Formações Acadêmicas</h1>
+            <div class="grid-cards">
+                <div class="card">
+                    <h3>Análise e Desenvolvimento de Sistemas</h3>
+                    <span>Facens | Previsão: Jun/2028</span>
+                    <p>Ensino Superior Tecnológico focado em desenvolvimento de software e soluções computacionais.</p>
+                </div>
+                <div class="card">
+                    <h3>Técnico em Administração</h3>
+                    <span>SENAI | Previsão: Jun/2026</span>
+                    <p>Formação técnica focada em gestão e rotinas corporativas.</p>
+                </div>
+                <div class="card">
+                    <h3>Técnico em Desenvolvimento de Sistemas</h3>
+                    <span>ETEC | Concluído</span>
+                    <p>Ensino técnico integrado ao Ensino Médio.</p>
+                </div>
+            </div>
+        </section>
 
-     </div>  
-     <h4 id="titulo-2">__________________________________________________________________________________________________________________________________________________________________________________________________</h4>
-       </div>     
-      </div>
+        <hr class="divisor">
 
-     <h1>Projetos</h1>
+        <!-- SEÇÃO PROJETOS -->
+        <section id="projetos" class="sessao">
+            <h1 class="titulo-sessao">Projetos</h1>
+            
+            <!-- PROJETO 1 -->
+            <div class="projeto-container">
+                <div class="projeto-imagem">
+                    <img src="./imgs/ServMaster.png" alt="Capa do projeto ServMaster">
+                </div>
+                <div class="projeto-texto">
+                    <h3>ServMaster</h3>
+                    <p>Sistema focado na gestão de manutenção, desenvolvido para organizar demandas, facilitar o fluxo de chamados e otimizar o controle operacional através de uma interface moderna.</p>
+                    <a href="https://rques.github.io/ServMaster/" target="_blank" class="btn-projeto">Acessar Site</a>
+                </div>
+            </div>
 
-     <div id="img-pro">
-      
-      <img src="./imgs/Captura de tela 2024-11-07 171814.png" alt="" class="pro">
-      <img src="./imgs/Captura de tela 2024-11-07 171835.png" alt="" class="pro">
-      <img src="./imgs/Captura de tela 2024-11-07 171908.png" alt="" class="pro">
-      <img src="./imgs/Captura de tela 2024-11-07 171923.png" alt="" class="pro">
- 
-      </div>
-     <div id="largura-tex">
-      <h3 id="texto2">Este projeto foi o meu tcc do curso de análise e desenvolvimento de sistemas. O projeto é uma "Agenda de controle" para uma sorveteria, aonde durante o dia os funcinários vão marcar tudos os produtos vendidos e no final gera um relatório de renda, e também no site há um sistema para cadastrar e descadastrar funcionários e administradores.</h3>
-     </div>
-     <h4 id="titulo-3">__________________________________________________________________________________________________________________________________________________________________________________________________</h4>
- 
+            <!-- PROJETO 2 -->
+            <div class="projeto-container">
+                <div class="projeto-imagem">
+                    <img src="./imgs/Doçura.png" alt="Capa do projeto Agenda">
+                </div>
+                <div class="projeto-texto">
+                    <h3>Agenda de Controle Comercial</h3>
+                    <p>Projeto de TCC do curso de Análise e Desenvolvimento de Sistemas. O projeto é uma "Agenda de controle" para uma sorveteria, onde os funcionários registram os produtos vendidos e o sistema gera um relatório de renda no final do dia. Inclui também um módulo para gerenciar o cadastro de funcionários e administradores.</p>
+                    <a href="https://alcagana.github.io/tccDo-uraGelada/" target="_blank" class="btn-projeto">Acessar Site</a>
+                </div>
+            </div>
 
-     <h1>Tecnologias</h1>
-     
-     <div id="img-tec">
-      
-      <div id="cai-html">
-       <img src="./imgs/html-sem.png" alt="" id="html">
-       <p id="tex-html">HTML</p>
-      </div>
-      <div id="cai-css">
-       <img src="./imgs/CSS3_sem-removebg-preview.png" alt="" id="css">
-       <p id="tex-css">CSS</p>
-      </div>
-      <div id="cai-js">
-       <img src="./imgs/js sem.png" alt="" id="js">
-       <p id="tex-js">JavaScript</p>
-      </div>
-     </div>
+            <!-- PROJETO 3 -->
+            <div class="projeto-container">
+                <div class="projeto-imagem">
+                    <img src="./imgs/EcoMapa.png" alt="Capa do projeto EcoMapa">
+                </div>
+                <div class="projeto-texto">
+                    <h3>EcoMapa</h3>
+                    <p>Plataforma interativa desenvolvida com HTML, CSS e JavaScript, focada em conscientização ambiental. O site ensina sobre reciclagem de forma dinâmica através de quiz interativo, textos informativos e vídeos.</p>
+                    <a href="https://rques.github.io/EcoMapa/" target="_blank" class="btn-projeto">Acessar Site</a>
+                </div>
+            </div>
+        </section>
 
-     <header id="rodapé">
+        <hr class="divisor">
 
-      <h5 id="tex-rod">Aline Marques 3°A_novotec</h5>
+        <!-- SEÇÃO TECNOLOGIAS -->
+        <section id="tecnologias" class="sessao">
+            <h1 class="titulo-sessao">Habilidades e Tecnologias</h1>
+            <div class="grid-tech">
+                <div class="tech-item">HTML, CSS e JavaScript</div>
+                <div class="tech-item">Excel Avançado (com VBA)</div>
+                <div class="tech-item">Power BI e Power Query</div>
+                <div class="tech-item">SAP (Módulo MM) e Risc</div>
+                <div class="tech-item">Word e PowerPoint</div>
+            </div>
+        </section>
+    </main>
 
-      <div id="iconss">
-       <a href="https://www.instagram.com/alinemarques75?igsh=MWk1dDYzdHNsazVsOQ=="><img src="./imgs/Instagram-Logo-removebg-preview.png" alt="" id="insta"></a>
-       <a href="https://github.com/"><img src="./imgs/GitHub-Mark-ea2971cee799-removebg-preview.png" alt="" id="github"></a>
-       <a href="https://api.whatsapp.com/send?phone=5511942009106"><img src="./imgs/png-clipart-call-icon-log-o-whatsapp-computer-icons-android-chatbot-user-whats-logo-grass-thumbnail-removebg-preview.png" alt="" id="watts"></a>
-      </div>
-
-     </header>
+    <!-- RODAPÉ -->
+    <footer id="rodape">
+        <h5>Aline Marques | Desenvolvedora Web</h5>
+        <div class="icones-sociais">
+            <a href="https://github.com/" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+            <a href="https://api.whatsapp.com/send?phone=5511942009106" target="_blank">WhatsApp</a>
+        </div>
+    </footer>
 
 </body>
 </html>
