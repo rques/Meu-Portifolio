@@ -238,3 +238,115 @@ main {
     background-color: #38bdf8;
     color: #0b1120;
 }
+
+/* =========================================
+   RESPONSIVIDADE (MEDIA QUERIES)
+   ========================================= */
+
+/* NOTEBOOKS E MONITORES MENORES (Até 1024px) */
+@media (max-width: 1024px) {
+    #cabecalho nav {
+        gap: 20px; /* Reduz o espaço entre os links no menu */
+    }
+
+    .projeto-container {
+        padding: 20px;
+        gap: 20px;
+    }
+    
+    .projeto-imagem {
+        min-width: 200px;
+    }
+}
+
+/* TABLETS E CELULARES NA HORIZONTAL (Até 768px) */
+@media (max-width: 768px) {
+    #cabecalho nav {
+        flex-wrap: wrap;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    #cabecalho a {
+        font-size: 16px; /* Diminui a fonte do menu */
+    }
+
+    main {
+        padding: 120px 15px 30px 15px;
+    }
+
+    .titulo-principal, .titulo-sessao {
+        font-size: 2rem; /* Títulos menores para não quebrar a tela */
+        margin-bottom: 20px;
+    }
+
+    .caixa-texto {
+        padding: 25px;
+        font-size: 1rem;
+    }
+
+    /* Força os cards a ocuparem 100% da largura na vertical */
+    .grid-cards {
+        grid-template-columns: 1fr;
+    }
+
+    /* Muda o layout do projeto de lado-a-lado para empilhado */
+    .projeto-container {
+        flex-direction: column;
+        border-left: none; /* Remove a borda lateral */
+        border-top: 4px solid #38bdf8; /* Passa a borda para o topo */
+        border-radius: 0 0 12px 12px;
+    }
+
+    .projeto-imagem, .projeto-texto {
+        min-width: 100%;
+        flex: none;
+    }
+
+    .projeto-imagem img {
+        max-height: 300px;
+    }
+
+    .icones-sociais {
+        flex-wrap: wrap;
+    }
+}
+
+/* CELULARES MENORES / SMARTPHONES (Até 480px) */
+@media (max-width: 480px) {
+    #cabecalho nav {
+        flex-direction: column; /* Empilha os links do menu */
+        align-items: center;
+        gap: 12px;
+    }
+
+    main {
+        /* Compensa a altura extra que o menu empilhado ocupa no topo */
+        padding-top: 220px; 
+    }
+
+    .titulo-principal, .titulo-sessao {
+        font-size: 1.6rem;
+    }
+
+    .caixa-texto {
+        padding: 20px;
+    }
+
+    /* Força as tecnologias a ficarem 1 por linha em telas muito pequenas */
+    .grid-tech {
+        grid-template-columns: 1fr;
+    }
+
+    /* O botão ocupa a largura total no celular para facilitar o toque */
+    .btn-projeto {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .icones-sociais a {
+        width: 100%;
+        text-align: center;
+    }
+}
