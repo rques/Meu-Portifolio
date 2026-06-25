@@ -1,6 +1,7 @@
 # 👩‍💻 Portfólio Pessoal | Aline Marques
 
 Bem-vindo ao repositório do meu portfólio pessoal! Este site foi desenvolvido para apresentar minha trajetória, formações acadêmicas, habilidades técnicas e os principais projetos de software e web que desenvolvi.
+
 🔗 **Acesse o portfólio online:** [https://rques.github.io/Meu-Portifolio/](https://rques.github.io/Meu-Portifolio/)
 
 ## 🎯 Objetivo do Projeto
